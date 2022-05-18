@@ -29,6 +29,7 @@ Blog-It is a flask application that enables users to view blog posts and comment
 
   To set up this application:
   
+  
 * Fork this repository to your github account.
 * Open the terminal on your pc and navigate to the specific folder location that you want this directory to be stored.
 * Clone the forked repository in your account to the specific folder chosen, through the git clone command.
