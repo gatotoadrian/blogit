@@ -20,6 +20,7 @@ Blog-It is a flask application that enables users to view blog posts and comment
 * flask
 
 * Wtforms
+
 * SQLAlchemy
 * The virtual environment
 
