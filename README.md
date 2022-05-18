@@ -4,6 +4,7 @@
 
 ## Description
 
+
 Blog-It is a flask application that enables users to view blog posts and comment on them.  It displays blog posts on the homepage and a comment section where users comment on each post. The app utilises sqalchemy which stores user information and allows users to view random quotes in the quotes page on each reload as it utilises a quotes api. Blog-It through WTforms and the Login Manager enables registered users to login to their user accounts, and new users to create accounts through sign up. On Login, users are able to access a user profile page that displays the username and other user details and allows users to update their profile including changing their profile picture. Users are also able to create their own blog posts and comment on other posts.
 
 
