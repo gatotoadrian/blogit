@@ -1,0 +1,63 @@
+{% extends "index.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ url_for('static', filename='image/img3.jpeg') }}">
+          <div class="media-body">
+            <h5><a class="article-title" href="{{ url_for('blogpost', post_id=post.id) }}">{{ post.title }}</a></h5>
+            <p class="article-content">{{ post.content }}</p>  
+            <div class="article-metadata">          
+              <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+            </div>          
+          </div>
+        <div class="collapse" id="comments-{{post.id}}">
+          <div class="card">
+            <div class="card-body" id="comments-expanded - {{post.id}}">
+              {%  for comment in post.comments %}
+              <div class="">
+                <a href="/posts/{{comment.author.username}}">{{comment.author.username}}</a>
+                : {{comment.content}}
+              </div>              
+                <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown"></button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="/delete-comment/{{comment.id}}"class="dropdown-item">Delete</a>
+                        </li>
+                      </ul>
+                 
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <p class="card-text">
+          {% if post.comments|length > 0 %}
+          <a data-bs-toggle="collapse" href="#comments-{{post.id}}" role="button">
+            <small>View {{post.comments|length}} Comments</small>
+          </a>
+          {% else %}
+          <small class="text-muted">No Comments</small>
+          {% endif %}
+        </p>
+        <form class="input-group mb-3" method="POST" action="/create-comment/{{post.id}}">
+          <input type="text" id="text" name="text" class="form-control" placeholder="Comment here..."/>
+          <button type="submit" class="btn btn-primary">Comment</button>
+        </form>
+      </article>
+        
+
+    {% endfor %}
+    {% block footer %}
+    <div class ="create" align="center">
+      <a href="/account"><button type="button" class="btn btn-info">
+          Create Blog
+        </button></a>
+        <a href="/quote"><button type="button" class="btn btn-success">
+          View Quotes
+        </button></a>
+    </div><br><br>
+    {% endblock %}
+
+    
+{% endblock content %}
