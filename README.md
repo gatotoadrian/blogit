@@ -71,14 +71,18 @@ Technologies used in the development of this project include:
 
 * CSS
 
-* Sqlalchemy
+* Sqlalchemy 
+
+
+##[DEMO]
+ https://manzi2.herokuapp.com/ click to veiw
 
 ## Known Bugs
 
 There are currently no known bugs.
 
 ## Support and contact details
-If the application malfunctions or develops a problem, feel free to contact me through email at abigailwachira@gmail.com
+If the application malfunctions or develops a problem, feel free to contact me through email at gatotoadrian@gmail,com
 
 ### License
 
