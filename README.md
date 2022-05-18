@@ -74,6 +74,7 @@ Technologies used in the development of this project include:
 * Sqlalchemy
 
 ## Known Bugs
+
 There are currently no known bugs.
 
 ## Support and contact details
