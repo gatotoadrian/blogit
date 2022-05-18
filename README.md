@@ -26,6 +26,7 @@ Blog-It is a flask application that enables users to view blog posts and comment
 * The virtual environment
 
 ## Setup
+
   To set up this application:
   
 * Fork this repository to your github account.
