@@ -50,9 +50,10 @@ Blog-It is a flask application that enables users to view blog posts and comment
 
 
         $ python3 wsgi.py
-        
+
         
 * To run tests for the application run the following command:
+
 
         $ python3 app/test.py
 
