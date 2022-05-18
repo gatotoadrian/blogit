@@ -68,6 +68,7 @@ Technologies used in the development of this project include:
 * Bootstrap
 
 * HTML
+
 * CSS
 * Sqlalchemy
 
