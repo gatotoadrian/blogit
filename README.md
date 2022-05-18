@@ -60,6 +60,7 @@ Blog-It is a flask application that enables users to view blog posts and comment
 ## Technologies Used
 Technologies used in the development of this project include:
 
+
 * Python3.8
 * Flask
 * Bootstrap
