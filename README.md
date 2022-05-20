@@ -75,9 +75,9 @@ Technologies used in the development of this project include:
 
 
 
-##[DEMO]
+## [DEMO]
 
- https://manzi2.herokuapp.com/ click to veiw
+ http://44.200.116.238:3454// click to veiw
 
 ## Known Bugs
 
